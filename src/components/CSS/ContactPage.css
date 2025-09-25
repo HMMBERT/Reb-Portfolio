@@ -1,0 +1,137 @@
+/* src/pages/CSS/ContactPage.css */
+
+.contact-page-container {
+  padding: 6rem 2rem 4rem 2rem;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  /* Applying Poppins here ensures all text inside inherits the font */
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-form-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 3rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.contact-header h2 {
+  font-size: 2.8rem;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+.contact-header p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #8D1B1B;
+  box-shadow: 0 0 0 3px rgba(141, 27, 27, 0.1);
+}
+
+/* --- FIX: ADDED WRAPPER FOR BUTTON POSITIONING --- */
+.form-group-submit {
+  text-align: right; /* Aligns the button to the right */
+  margin-top: 2rem;
+}
+
+/* --- FIX: IMPROVED BUTTON STYLE --- */
+.submit-button {
+  display: inline-block; /* Changed from full-width */
+  width: auto;
+  padding: 0.8rem 2.5rem; /* Refined padding */
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  background-color: #8D1B1B;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Transition all properties */
+}
+
+.submit-button:hover {
+  background-color: #6c1515;
+  /* Adds a "lift" and shadow effect */
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(141, 27, 27, 0.25);
+}
+
+/* Add these new rules to the end of your ContactPage.css */
+
+.file-input-group {
+  display: flex;
+  align-items: center;
+}
+
+/* This is the key: we hide the default input but keep it accessible */
+.file-input-hidden {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+/* This is our new, custom-styled button */
+.file-input-label {
+  display: inline-block;
+  background-color: transparent;
+  color: #8D1B1B;
+  border: 1px solid #8D1B1B;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.file-input-label:hover {
+  background-color: #8D1B1B;
+  color: #ffffff;
+}
+
+/* Style for the text that shows the selected file's name */
+.file-name-display {
+  margin-left: 1rem;
+  color: #555;
+  font-style: italic;
+}
