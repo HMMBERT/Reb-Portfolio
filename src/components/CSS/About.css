@@ -1,0 +1,95 @@
+/* src/components/CSS/About.css */
+.about-section {
+  padding: 5rem 2rem;
+  background-color: #f9f9f9; /* A very light grey to separate from pure white */
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+/* Adds a maroon underline to the title */
+.about-title::after {
+  content: '';
+  width: 80px;
+  height: 4px;
+  background-color: #8D1B1B;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* Text takes up more space */
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.about-text h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #8D1B1B; /* Maroon for the sub-headline */
+  margin-bottom: 1.5rem;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  color: #555555;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.about-skills h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid #8D1B1B; /* Accent line */
+  padding-left: 1rem;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.skill-tag {
+  background-color: #e9ecef;
+  color: #495057;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+  background-color: #8D1B1B;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .about-content {
+    grid-template-columns: 1fr; /* Stack columns on smaller screens */
+  }
+}

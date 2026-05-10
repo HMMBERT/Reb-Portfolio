@@ -1,0 +1,97 @@
+/* src/pages/CSS/SinglePost.css */
+
+.single-post-section {
+  padding-bottom: 4rem;
+  background-color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* --- Banner Image --- */
+.single-post-banner {
+  width: 100%;
+  height: 400px; /* Adjust height as needed */
+  object-fit: cover;
+  margin-bottom: 3rem;
+  display: block;
+}
+
+/* --- Main Content Container --- */
+.single-post-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.single-post-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+/* --- Post Metadata (Author, Date, Category) --- */
+.post-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  color: #777;
+  font-size: 0.9rem;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 0.75rem 0;
+}
+
+.meta-author, .meta-date {
+  font-weight: 500;
+}
+
+.meta-category {
+  background-color: rgba(141, 27, 27, 0.1);
+  color: #8D1B1B;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+/* --- Main Article Content --- */
+.single-post-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+/* --- "Post Not Found" and "Back" Links --- */
+.post-not-found {
+  text-align: center;
+  padding: 6rem 2rem;
+  font-family: 'Poppins', sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.post-not-found h2 {
+  color: #8D1B1B;
+  font-size: 2rem;
+}
+
+.post-not-found p {
+  color: #555;
+  font-size: 1.1rem;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 2rem;
+  color: #8D1B1B;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.back-link:hover {
+  transform: translateX(-5px);
+}

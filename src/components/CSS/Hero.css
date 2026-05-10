@@ -1,0 +1,212 @@
+/* src/components/CSS/Hero.css */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  /* Switched to a clean white background */
+  background-color: #ffffff; 
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.hero-text {
+  max-width: 600px;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.hero-text h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  /* Dark text for readability on white background */
+  color: #1a1a1a; 
+  margin-bottom: 0.5rem;
+}
+
+.hero-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.75rem;
+  font-weight: 500;
+  /* Using maroon as the primary accent color */
+  color: #8D1B1B; 
+  margin-bottom: 1.5rem;
+  min-height: 56px;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  /* Standard dark grey for paragraph text */
+  color: #555555; 
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.hero-socials {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.hero-socials a {
+  color: #444444; /* Dark icons */
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.hero-socials a:hover {
+  color: #8D1B1B; /* Maroon hover effect */
+  transform: translateY(-3px);
+}
+
+.hero-cta-button {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  background-color: transparent;
+  color: #8D1B1B; /* Maroon text */
+  padding: 0.8rem 2rem;
+  border: 1px solid #8D1B1B; /* Maroon border */
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.hero-cta-button:hover {
+  background-color: #8D1B1B; /* Maroon fill on hover */
+  color: #ffffff; /* White text on hover */
+}
+
+.hero-image-container {
+  flex-shrink: 0;
+  animation: fadeInUp 0.8s ease-out 0.2s forwards;
+  opacity: 0;
+}
+
+.hero-image {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #8D1B1B; /* Maroon accent border */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Standard soft shadow */
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .hero-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .hero-socials {
+    justify-content: center;
+  }
+  .hero-image {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 2rem;
+  }
+  .hero-text h1 {
+    font-size: 3rem;
+  }
+  .hero-subtitle {
+    font-size: 1.5rem;
+  }
+}
+.tech-stack {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.tech-stack-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  /* Dark grey text for readability on a white background */
+  color: #555555; 
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
+
+/* The container with the new maroon gradient background */
+.tech-icons-slider {
+  background: linear-gradient(90deg, #6D0000 0%, #A30000 100%);
+  box-shadow: 0 5px 15px rgba(141, 27, 27, 0.2); /* Softer, color-matched shadow */
+  border-radius: 5px;
+  height: 60px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+/* IMPORTANT: The fade effect now uses white to blend with the page background */
+.tech-icons-slider::before,
+.tech-icons-slider::after {
+  background: linear-gradient(to right, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 15%;
+  z-index: 2;
+}
+
+.tech-icons-slider::before {
+  left: 0;
+  top: 0;
+}
+
+.tech-icons-slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+/* The track that holds and animates the icons */
+.tech-icons-track {
+  display: flex;
+  position: absolute;
+  width: calc(14 * 100px); 
+  animation: scroll 30s linear infinite;
+}
+
+/* The animation keyframes (no changes needed here) */
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-7 * 100px)); }
+}
+
+/* Icons are now white for high contrast on the maroon background */
+.tech-icon {
+  height: 60px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: #ffffff;
+  opacity: 0.8; /* Slightly transparent for a softer look */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.tech-icon:hover {
+  transform: scale(1.2);
+  opacity: 1; /* Fully opaque on hover */
+}
