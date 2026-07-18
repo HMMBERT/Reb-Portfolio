@@ -103,3 +103,65 @@
   background-color: #8D1B1B;
   color: #ffffff;
 }
+/* Add to CSS/Projects.css */
+
+.project-card--company {
+  border-top: 4px solid #6e0f1a; /* dark maroon accent */
+  background: linear-gradient(180deg, rgba(110, 15, 26, 0.06) 0%, transparent 18%);
+}
+
+.project-card--company:hover {
+  border-color: #8c1522;
+  box-shadow: 0 8px 24px rgba(110, 15, 26, 0.15);
+}
+
+.company-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #6e0f1a;
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+  margin-bottom: 0.75rem;
+}
+/* Add to CSS/Projects.css */
+/* Add to CSS/Projects.css */
+
+.project-card--company {
+  border-top: 4px solid #6e0f1a; /* dark maroon accent */
+  background: linear-gradient(180deg, rgba(110, 15, 26, 0.06) 0%, transparent 18%);
+}
+
+.project-card--company:hover {
+  border-color: #8c1522;
+  box-shadow: 0 8px 24px rgba(110, 15, 26, 0.15);
+}
+
+.company-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.company-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #6e0f1a;
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+}
+
+.project-date {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: #8c1522;
+}

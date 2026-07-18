@@ -5,7 +5,13 @@ const Resume = () => {
   const resumeData = {
     experience: [
       {
-        year: "October 2025 - Current",
+        year: "May 2026 - Current",
+        role: "Executive Data Encoder I / Automation Engineer",
+        company: "NTT Data Payment Service Philippines",
+        desc: "Encoding Terminal Profile/ Automating Encoding Task"
+      },
+      {
+        year: "October 2025 - May 2026",
         role: "Executive Quality Assurance",
         company: "NTT Data Payment Service Philippines",
         desc: "Managing operational quality standards and payment service validation."
